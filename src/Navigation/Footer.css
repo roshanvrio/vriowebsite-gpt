@@ -1,0 +1,47 @@
+.footer {
+  background-color: #010006;
+  color: white,
+  
+}
+.footer img,
+.footer svg {
+  vertical-align: bottom;
+}
+.map {
+  padding-right: 4px;
+}
+
+.linked {
+  font-weight: 700;
+  margin-left: -6rem;
+
+
+}
+
+.message {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+a{
+  color: white;
+  text-decoration:none
+}
+.v1 {
+  border-left: 2px solid red;
+  height: 100px;
+  margin-left: 1.5rem;
+}
+
+a{
+  color: white !important;
+}
+
+.fa{
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+.address{
+  font-size: 15px;
+}

@@ -1,0 +1,178 @@
+
+.home-container {
+  padding: 3rem 7rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+ padding-left: 3rem;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  box-sizing: border-box;
+}
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px; 
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.slider-prev {
+  left: 10px;
+}
+
+/* .slider-next {
+  right: 10px;
+} */
+
+.text-container h1{
+  text-transform: uppercase;
+  font-weight: 700px;
+  font-size: 40px;
+  line-height: 48.41px;
+  color:  #FFFFFF;
+}
+.text-container h2{
+  text-transform: uppercase;
+  font-weight: 300px;
+  font-size: 20px;
+  line-height: 24.21px;
+  color:  #FFFFFF;
+}
+.text-container{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.grid-item {
+  position: relative; /* Ensure positioning for overlay elements */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.grid-item:hover .zoom-wrapper {
+  border: 3px solid #fff; /* Adds a border around the zoom wrapper on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Glow effect with shadow around the zoom-wrapper */
+}
+.zoom-wrapper{
+position: relative;
+height: 400px;
+overflow: hidden;
+border-radius: 8px;
+margin: 20px;
+display: inline-block;
+}
+
+.zoom-wrapper img{
+object-fit: cover;
+transition: transform 0.8s  ease;
+height: 100%;
+width: 300px; 
+cursor: pointer;
+}
+.zoom-wrapper:hover img{
+transform: scale(1.5);
+transform-origin: top left;
+-webkit-filter: brightness(40%);
+transition: all 1s ease;
+}
+
+.overlay {
+position: absolute;
+top: 20%; 
+left: 0; 
+width: 100%; 
+height: 100%; 
+color: #f0f0f0; 
+padding: 20px; 
+opacity: 0;
+transition: opacity 0.5s ease;
+border-radius: 8px; 
+z-index: 10; 
+text-align: center; 
+box-sizing: border-box; 
+overflow: hidden;
+font-size: 16px; 
+font-weight: 100px; 
+margin: 0;
+line-height: 1.4;
+
+}
+
+.default-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-size: 1.5rem;
+font-weight: bold;
+text-align: center;
+z-index: 1;
+transition: opacity 0.5s ease; 
+}
+
+.zoom-wrapper:hover .default-text {
+opacity: 0;
+}
+.zoom-wrapper:hover .overlay {
+opacity: 1;
+}
+.zoom-wrapper:hover img {
+transform: scale(1.1); 
+}
+
+.read-more-button {
+border: 0; 
+width: 150px;
+border-radius: 20px; 
+background-color: rgba(255, 255, 255, 0.521);
+color: #FFFFFF;
+cursor: pointer; 
+display: inline-block; 
+font-size: 16px;
+font-weight: 500; 
+line-height: 2.5; 
+outline: none; 
+padding: 0 1rem; 
+text-align: center; 
+text-decoration: none; 
+white-space: nowrap;
+margin-top: 12vh;
+background-color: rgba(255, 255, 255, 0.315); 
+border-color: rgba(255, 255, 255, 0.7); 
+}

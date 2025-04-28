@@ -1,0 +1,46 @@
+
+/* Dark theme modal */
+.dark-theme-modal .modal-content {
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .dark-theme-modal .modal-header {
+    border-bottom: 1px solid #444;
+  }
+  
+  .dark-theme-modal .modal-title {
+    color: lightblue;
+    font-weight: bold;
+  }
+  
+  .dark-theme-modal .modal-body {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+  }
+  
+  .dark-theme-modal .link {
+    color: lightblue;
+    text-decoration: none;
+  }
+  
+  .dark-theme-modal .link:hover {
+    text-decoration: underline;
+  }
+  
+  .dark-theme-modal .btn-secondary {
+    background-color: #444;
+    color: white;
+  }
+  
+  .dark-theme-modal .btn-secondary:hover {
+    background-color: #555;
+  }
+  
+  .modal-footer {
+    background-color: #222;
+    border-top: 1px solid #444;
+  }
+  

@@ -1,0 +1,80 @@
+/* Header.css */
+.header {
+  background-color:  #010006;
+  padding: 1rem 0; 
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  align-items: center; 
+}
+
+.logo-container {
+  margin-right: 1rem; 
+}
+
+.logo {
+  height: 60.78px;
+  width: 120px; 
+  margin-left: -60px;
+}
+
+.nav-container {
+  display: flex;
+  gap: 2rem; 
+  justify-content: end;
+}
+
+.nav-link {
+  text-decoration: underline; /* Ensure no underline on links */
+  color:  #FFFFFF;
+  padding: 1.0rem; /* Padding for links */
+  cursor: pointer; /* Indicate that the links are not interactive */
+}
+
+
+.nav-link {
+  text-decoration: none; /* Remove underline from links by default */
+  color: #FFFFFF;
+  ; /* Default text color */
+  padding: 0.5rem; /* Padding for links */
+  cursor: pointer; /* Indicate that the links are interactive */
+  position: relative; /* For positioning the underline */
+}
+
+.nav-link:hover {
+  color: white; /* Color change on hover */
+}
+
+.nav-link::after {
+  content: ""; 
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: red; /* Color of the underline */
+  transform: scaleX(0); /* Hide the underline by default */
+  transform-origin: bottom right; /* Animate from right to left */
+  transition: transform 0.1s ease; /* Smooth transition for the underline */
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1); /* Show the underline */
+}
+
+.nav-link.active {
+  color: white; /* Color when active */
+}
+
+.nav-link.active::after {
+  transform: scaleX(1); /* Ensure underline is visible */
+}
+
+
+
+
+
+

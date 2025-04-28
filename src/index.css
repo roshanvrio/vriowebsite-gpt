@@ -1,0 +1,205 @@
+/* * {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --color-gray-100: #f4f3f1;
+  --color-gray-200: #dddbd8;
+  --color-gray-300: #ccc9c6;
+  --color-gray-400: #aeaba7;
+  --color-gray-500: #8a8784;
+  --color-gray-600: #656360;
+  --color-gray-700: #4b4a47;
+  --color-gray-800: #31302e;
+  --color-gray-900: #1f1d1b;
+
+  --color-primary-100: #fcf3e1;
+  --color-primary-200: #fceccd;
+  --color-primary-300: #fae1af;
+  --color-primary-400: #fbd997;
+  --color-primary-500: #ffd37c;
+  --color-primary-600: #f9c762;
+  --color-primary-700: #fbc14d;
+  --color-primary-800: #fab833;
+  --color-primary-900: #f6ad1b;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */
+
+
+  :root {
+    /* Header */
+    --color-background-dark: #111;
+    --color-text-light: #fff;
+    --color-highlight: #FFD700;
+    --color-overlay-dark: rgba(51, 59, 66, 0.8);
+  }
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(27, 23, 23);
+  background-image: url('./Assets/backgroundimage/Background.png');
+  background-position: center;
+  background-size: cover; 
+  font-family: 'Inter';
+ 
+}
+
+.bgimg{
+  width: 100%;
+  height:40vh;
+}
+
+
+
+.industryContainer , .solutionConatiner{
+
+/* General Grid Layout */
+.static-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  position: relative; /* Ensure positioning for overlay elements */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.grid-item:hover .zoom-wrapper {
+  border: 3px solid #fff; /* Adds a border around the zoom wrapper on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Glow effect with shadow around the zoom-wrapper */
+}
+
+.zoom-wrapper {
+  position: relative; /* Ensure correct positioning for the image */
+  transition: all 0.3s ease; /* Smooth transition for zoom effect and glow */
+}
+
+.zoom-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth zoom effect for the image */
+}
+
+.grid-item:hover .zoom-wrapper img {
+  transform: scale(1.05); /* Zoom effect on the image */
+}
+
+.grid-item:hover .overlay {
+  opacity: 1; /* Make the overlay visible when hovering */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth fade-in effect for overlay */
+  margin-top:20%
+}
+
+.grid-item:hover .overlay {
+  opacity: 1; /* Display the overlay when hovered */
+}
+
+/* Text Overlay Styling */
+.text-overlay {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Header Text in Overlay */
+.text-overlay h1 {
+  font-weight: 900;
+  font-size: 64px;
+  font-family: 'Inter';
+}
+
+/* Responsive Design for Smaller Screens */
+
+/* Medium Screens (tablets, smaller laptops) */
+@media (max-width: 768px) {
+  .static-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Smaller grid items */
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .text-overlay h1 {
+    font-size: 48px; /* Reduce font size for smaller screens */
+  }
+  
+  .overlay {
+    font-size: 14px; /* Adjust text size for smaller screens */
+  }
+}
+
+/* Small Screens (Mobile phones) */
+@media (max-width: 480px) {
+  .static-grid {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .text-overlay h1 {
+    font-size: 32px; /* Further reduce font size on mobile */
+  }
+  
+  .overlay {
+    font-size: 12px; /* Adjust text size for mobile */
+    padding: 5px; /* Less padding for mobile */
+  }
+
+  .text-overlay {
+    top: 25%; /* Adjust the overlay's position */
+  }
+}
+
+
+  
+}
+
+.global-color{
+color:#ffcc00
+}
+  
+  
+  

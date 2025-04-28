@@ -1,0 +1,186 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #1d1d1d;
+  color: #f4f4f4;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+.header-container {
+  background-color: #111;
+  color: #ffcc00;
+  padding: 50px 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-container h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.header-container p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Introduction Section */
+.intro {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+/* Digital Transformation Journey */
+.journey {
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.journey-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.journey-point {
+  width: 48%;
+  background-color: #444;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.journey-point:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.journey-point h3 {
+  font-size: 1.6rem;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.journey-point p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Key Digital Offerings Section */
+.digital-offerings {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.digital-offerings ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.digital-offerings li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.digital-offerings li strong {
+  color: #ffcc00;
+}
+
+/* Impact Section */
+.impact {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.impact-point {
+  margin-bottom: 30px;
+}
+
+.impact-point h3 {
+  font-size: 1.6rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.impact-point p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .journey-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .journey-point {
+    width: 100%;
+  }
+
+  .digital-offerings ul {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow:
+# Specify the location of your sitemap
+Sitemap: https://www.vriodigital.com/sitemap.xml

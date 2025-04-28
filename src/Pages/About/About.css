@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+.about-container {
+    text-align: left;
+    margin: 86px;
+    color: white; 
+  }
+  .text-overlay h1{
+    font-weight: 900;
+    font-size: 64px;
+    font-family: 'Inter';
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    border-radius: 8px; 
+    
+  }
+  .about-container h1 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38.73px;
+    margin-bottom: 38px;
+    
+  }
+  
+  .about-container p {
+    margin: 0 0 2.7rem 0;
+    padding: 0;
+    color: white;
+  }
+  .about-secondtitle{
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 43.57px;
+    color: #FFFFFF;
+    
+  }
+  
+  .container1 {
+    width: 100%; 
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex: 1; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 29.05px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    
+
+  }
+/* .highlight{
+    background-color:#DD223E;
+    ;
+   
+} */
+ 
+  .responsive-img{
+    max-width: 100%;
+    margin: 10px; /* Adds space between the image and the text below */
+  }
+  /* .col {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+  } */
+
+/* 
+  .whychooseus{
+    background-image: url('../../Assets/WhyChooseBG.png'); 
+  } */
+
+  .t2{
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    font-family: "Jost";
+    font-size: 48px;
+  }
+
+  .t3{
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 400;
+    color: white;
+    margin: 88px 0px;
+    cursor: pointer;
+  }
+
+  .t3placement{
+   width: fit-content;
+  }
+
+  .subt2{
+    font-size: 64px;
+    font-weight: 400;
+    font-family: "Bebas Neue";
+  }
+
+  .subt3{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Inter";
+   
+  }
+
+  .alignrow{
+    padding: 0 155px;
+  }
+
+  h1{
+     font-family: "Bebas Neue" !important;
+  }
